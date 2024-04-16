@@ -11,8 +11,8 @@ async function main() {
     messages: [{ role: "system", content: "You are a helpful assistant." }],
     model: "gpt-3.5-turbo",
   });
-
-  console.log(completion.choices[0]);
+  
+  document.getElementById("openai").innerHTML = completion.choices[0].message.content;
 }
 
 main();
