@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: Create API Key File
-        run: echo "const OPENAI_API_KEY = '${{ secrets.OPENAI_API_KEY }}';" > src/test.js
+        run: echo "const OPENAI_API_KEY = '${{ secrets.OPENAI_API_KEY }}';" > test.js
