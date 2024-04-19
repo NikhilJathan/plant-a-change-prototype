@@ -29,6 +29,7 @@ async function main() {
     if (error.response) {
       console.error("Response status:", error.response.status);
       console.error("Response data:", error.response.data);
+      console.error("key:", apiKey);
   }
 }
 }
