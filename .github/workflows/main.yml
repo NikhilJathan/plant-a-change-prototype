@@ -20,5 +20,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Create API Key File
-        run: echo "const OPENAI_API_KEY = '${{ secrets.OPENAI_API_KEY }}';" > test.js
+      - name: Update API Key File
+        run: sed -i "s/const apiKey = \"\${{ secrets.OPENAI_API_KEY }}\";/const apiKey = \"${{ secrets.OPENAI_API_KEY }}\";/" test.js
