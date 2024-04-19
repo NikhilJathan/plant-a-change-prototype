@@ -1,4 +1,4 @@
-const apiKey = process.env.OPENAI_API_KEY;
+const apiKey = "{{ secrets.OPENAI_API_KEY }}";
 
 async function main() {
     const response = await axios.post(
@@ -17,7 +17,7 @@ async function main() {
             "Content-Type": "application/json",
             Authorization: `Bearer ${apiKey}`,
           },
-        }
+        }z
       );
       const chatbotResponse = response.data.choices[0].text;
 
