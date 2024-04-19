@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = 'i hate openai';
 
 async function main() {
   try {
