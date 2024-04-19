@@ -1,4 +1,4 @@
-const apiKey = "${{ secrets.OPENAI_API_KEY }}";
+# api key will go here
 
 async function main() {
   try {
