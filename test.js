@@ -17,7 +17,7 @@ async function main() {
             "Content-Type": "application/json",
             Authorization: `Bearer ${apiKey}`,
           },
-        }z
+        }
       );
       const chatbotResponse = response.data.choices[0].text;
 
