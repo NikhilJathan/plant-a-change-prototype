@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: Update API Key File
-        run: $sed -i "s/const apiKey = 'i hate openai';/const apiKey = '${{ env.OPENAI_API_KEY }}';/" test.js
+        run: sed -i "s/const apiKey = 'i hate openai';/const apiKey = '${{ env.OPENAI_API_KEY }}';/" test.js
