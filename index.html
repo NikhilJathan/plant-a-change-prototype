@@ -8,36 +8,16 @@
     <script src="https://kit.fontawesome.com/3f213ec3ac.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="p-3 text-bg-dark">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <h1>Hello, world!</h1>
-
     <div class="row">
       <div class="col">
         <iframe width="1080" height="720" frameborder="0" scrolling="no" allowfullscreen src="https://www.arcgis.com/home/webscene/viewer.html?webscene=560d99d892e14553b7a3011313f6709d&viewpoint=cam:151.03629427,-33.84829545,51953.271;0.125,0.554"></iframe>
       </div>
       <div class="col">
-        <div id="openai"></div>
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Enter a location..." aria-label="Enter a location..." aria-describedby="button-addon2">
           <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
         </div>
+        <div id="openai"></div>
       </div>
     </div>
 
