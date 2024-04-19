@@ -1,6 +1,7 @@
 const apiKey = "{{ secrets.OPENAI_API_KEY }}";
 
 async function main() {
+  try {
     const response = await axios.post(
         "https://api.openai.com/v1/completions",
         {
@@ -23,5 +24,13 @@ async function main() {
 
     document.getElementById("openai").innerHTML = chatbotResponse;
   }
-  
+  catch (error) {
+    console.error("Error:", error);
+    if (error.response) {
+      console.error("Response status:", error.response.status);
+      console.error("Response data:", error.response.data);
+  }
+}
+}
+
   main();
