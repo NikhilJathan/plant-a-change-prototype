@@ -1,0 +1,41 @@
+@font-face {
+    font-family: LucidityExpand;
+    src: url(fonts/Lucidity-Expand.woff);
+}
+
+body {
+    background-color: #F5FFEC;
+}
+
+h1 {
+    color: #3C3360;
+    text-shadow: 3px 3px 0 #B6D28A;
+    font-family: LucidityExpand;
+    font-size: 42px;
+}
+
+hr {
+    width: 97%;
+    color: #3C3360;
+    border-top: 4px dashed darkorchid;
+}
+
+.logo {
+    height: 40px;
+    position: relative;
+    top: -2px;
+}
+
+.btn-primary {
+    --bs-btn-color: #D7B9D5;
+    --bs-btn-bg: #3C3360;
+    --bs-btn-border-color: #3C3360;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:  #322b52;
+    --bs-btn-hover-border-color: #322b52;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #292343;
+    --bs-btn-active-border-color: #292343;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
